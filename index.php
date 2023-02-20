@@ -57,18 +57,31 @@ $hotels = [
         <?php
             
             echo '<h1>Hotel</h1>';
-             echo '<ul>';
-             foreach ($hotels as $singleHotel => $details ) {
-                   echo '<li>';
-                   print_r($details['name']);
-                   print_r($details['description']);
-                   print_r($details['parking']);
-                   print_r($details['vote']);
-                   print_r($details['distance_to_center']);
+            
+                   foreach ($hotels as $singleHotel => $details ) {
+                    echo '<ul>';
+                        echo '<li>';
+                            print_r('Nome:'.' ' .$details['name']);
+                        echo '</li>';
+                        echo '<li>';
+                            print_r('Descrizione:'.' ' .$details['description']);
+                        echo '</li>';
 
-                   echo '</li>';
-                         
-            }
+                        echo '<li>';
+                            print_r('Parcheggio:'.' ' .$details['parking']);
+                        echo '</li>';
+
+                        echo '<li>';
+                            print_r('Voto:'.' ' .$details['vote']);
+                        echo '</li>';
+
+                        echo '<li>';
+                            print_r('Distanza dal centro:'.' ' .$details['distance_to_center']);
+                        echo '</li>';
+                    echo '</ul>';
+             }
+                      
+            
         
             
 
