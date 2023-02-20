@@ -3,14 +3,24 @@
     margin: 0;
     box-sizing: border-box;
 }
+div{
+    height: 500px;
+    width: 100vw;
+    display: flex ;
+    flex-wrap: wrap;
+}
 
 ul{
     display: flex ;
-    
+    flex-wrap: wrap;
+    min-height: 100px;
+    width: calc(100% / 6);
+    margin: 20px;
+    background-color: bisque;
 }
 
 li{
-    
+    width: 100%;
     border: 1px solid black;
     list-style: none;
 

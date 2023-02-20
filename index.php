@@ -40,7 +40,7 @@ $hotels = [
 
 ];
 
-?>
+?>;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,11 +53,10 @@ $hotels = [
 </head>
 <body>
 
-    <h1>
         <?php
             
             echo '<h1>Hotel</h1>';
-            
+                echo '<div>';
                    foreach ($hotels as $singleHotel => $details ) {
                     echo '<ul>';
                         echo '<li>';
@@ -68,7 +67,8 @@ $hotels = [
                         echo '</li>';
 
                         echo '<li>';
-                            print_r('Parcheggio:'.' ' .$details['parking']);
+                             if ($details['parking'] == true) print_r('questo hotel ha il parcheggio');              
+                                elseif (print_r('questo hotel non ha il parcheggio'));
                         echo '</li>';
 
                         echo '<li>';
@@ -76,17 +76,15 @@ $hotels = [
                         echo '</li>';
 
                         echo '<li>';
-                            print_r('Distanza dal centro:'.' ' .$details['distance_to_center']);
+                            print_r('Distanza dal centro:'. ' ' .$details['distance_to_center']);
                         echo '</li>';
                     echo '</ul>';
-             }
-                      
-            
-        
-            
-
+                                
+                };
+                    
+             
+                echo '</div>';
         ?>
-    </h1>
     
 </body>
 </html>
