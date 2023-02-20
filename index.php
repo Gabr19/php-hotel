@@ -49,38 +49,27 @@ $hotels = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP hotels</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <h1>
         <?php
-            //  echo '<ul>';
-            //  for ($i=0; $i<=5; $i++) {
-            //      echo '<li>';
-            //      $details = array_values($hotels[1]); 
-            //      print_r($details) ;
-            //      echo '</li>';
-            //  }
-
-            //  echo '<ul>';
-            //  foreach ($hotels as $singleHotel => $details ) {
-            //      echo '<li>';
-            //      echo "$singleHotel: $details";
-            //      echo '</li>';
-            //  }
-
+            
+            echo '<h1>Hotel</h1>';
              echo '<ul>';
              foreach ($hotels as $singleHotel => $details ) {
                    echo '<li>';
-                   print_r($details) ;
+                   print_r($details['name']);
+                   print_r($details['description']);
+                   print_r($details['parking']);
+                   print_r($details['vote']);
+                   print_r($details['distance_to_center']);
+
                    echo '</li>';
                          
             }
-                
-                // $nomi = array_keys($hotels); 
-                // $anni = array_values($hotels); 
-                // print_r($nomi); 
-                // print_r($anni);
+        
             
 
         ?>
