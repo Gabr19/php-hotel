@@ -55,7 +55,7 @@ $hotels = [
 
         <?php
             
-            echo '<h1>Hotel</h1>';
+            echo '<div class="titolo"><h1>Hotel</h1></div>';
                 echo '<div>';
                    foreach ($hotels as $singleHotel => $details ) {
                     echo '<ul>';
@@ -67,8 +67,8 @@ $hotels = [
                         echo '</li>';
 
                         echo '<li>';
-                             if ($details['parking'] == true) print_r('questo hotel ha il parcheggio');              
-                                elseif (print_r('questo hotel non ha il parcheggio'));
+                             if ($details['parking'] == true) print_r('Questo hotel ha il parcheggio');              
+                                elseif (print_r('Questo hotel non ha il parcheggio'));
                         echo '</li>';
 
                         echo '<li>';
@@ -76,7 +76,7 @@ $hotels = [
                         echo '</li>';
 
                         echo '<li>';
-                            print_r('Distanza dal centro:'. ' ' .$details['distance_to_center']);
+                            print_r('Distanza dal centro:'. ' ' .$details['distance_to_center']. 'km');
                         echo '</li>';
                     echo '</ul>';
                                 
