@@ -54,7 +54,35 @@ $hotels = [
 
     <h1>
         <?php
-             var_dump($hotels) ; 
+            //  echo '<ul>';
+            //  for ($i=0; $i<=5; $i++) {
+            //      echo '<li>';
+            //      $details = array_values($hotels[1]); 
+            //      print_r($details) ;
+            //      echo '</li>';
+            //  }
+
+            //  echo '<ul>';
+            //  foreach ($hotels as $singleHotel => $details ) {
+            //      echo '<li>';
+            //      echo "$singleHotel: $details";
+            //      echo '</li>';
+            //  }
+
+             echo '<ul>';
+             foreach ($hotels as $singleHotel => $details ) {
+                   echo '<li>';
+                   print_r($details) ;
+                   echo '</li>';
+                         
+            }
+                
+                // $nomi = array_keys($hotels); 
+                // $anni = array_values($hotels); 
+                // print_r($nomi); 
+                // print_r($anni);
+            
+
         ?>
     </h1>
     
